@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список клиентов</title>
+</head>
+<body>
+    <table border="1">          <!-- TODO results -->
+        <th>Client ID</th>
+        <th>Client name</th>
+        <th>Date added</th>
+        <th>Address</th>
+
+        <s:forEach items="${allStudents}" var="stud">
+            <tr>
+                <td>${stud.clientid}</td>
+                <td>${stud.client_name}</td>
+                <td>${stud.type}</td>
+                <td>${stud.address}</td>
+            </tr>
+        </s:forEach>
+
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
